@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <link rel="stylesheet" href="lab1,2.css">
+   <form id="form" onsubmit="Total() ;return false;">
+      <div id="main"> <div id ='img'></div>
+      <div><center><h1> <u>Billing Counter</u> </h1></center></div></div>
+      <br>
+      <label>Name</label>
+   <input type="Name" placeholder="Name" id="Name" size=50 required>
+   <br>
+   <br>
+   <label>Phone no.</label>
+   <input type="text" placeholder="Phone no." id="Phone no." size=100 maxlength="10" >  <!--maxlenght work for text and no. -->
+   <br>
+   <br>
+   <label>Burger</label>
+   <select id="burger" name="burger" multiple onchange="bur()">
+      <option value="30">Aloo tikki burger  Rs.30</option>
+      <option value="150">Double Quarter Pounder with Cheese  Rs.150</option>
+      <option value="60">McDouble  Rs.60</option>
+      <option value="180">Cheeseburger  Rs.180</option>
+      <option value="200">Hamburger  Rs.200</option>
+      <option value="270">Quarter Pounder with Cheese Deluxe  Rs.270</option>
+   </select>
+   <br>
+   <br>
+   <label> Sauce</label>
+   <select id="Sauce" name=Sauce multiple onchange="sauce()">
+      <option value="45">Tangy Barbeque Sauce  Rs.45</option>
+      <option value="30">Spicy Buffalo Sauce  Rs.30</option>
+      <option value="60">McDouble  Rs.60</option>
+      <option value="180">Cheeseburger  Rs.180</option>
+      <option value="200">"Hamburger"  Rs.200</option>
+      <option value="270">Quarter Pounder with Cheese Deluxe  Rs.270</option>
+   </select>
+   <br>
+   <br>
+   <label>McCafe Coffees</label>
+   <select id="Coffees" name="Coffees" multiple onchange="coffees()">
+      <option value="270">Caramel Macchiato  Rs.270 </option>
+      <option value="280">Cappuccino  Rs.280</option>
+      <option value="360">Caramel Cappuccino  Rs.360</option>
+      <option value="500">Premium Roast Cofee  Rs.500</option>
+      <option value="170">French Vanilla Cappuccino  Rs.170</option>
+      <option value="200">Iced Mocha Latte  Rs.200</option>
+   </select>
+   <br>
+   <button type="reset">reset</button>
+   <br>
+   <br>
+   <label>Grant offer</label>
+   <select id="offer" name="offer" multiple>
+      <option values="Caramel Macchiato">Caramel Macchiato at Rs.200 </option>
+      <option values="Spicy Buffalo Sauce">Spicy Buffalo Sauce for free </option>
+      <option values="Aloo tikki burger">Aloo tikki burger free with 2 allo tikki burger</option>
+      <option values="Premium Roast Cofee">Premium Roast Cofee at Rs.400</option>
+   </select>
+   <br>
+   <br>
+   <button type="button" onclick="Total()">total</button>
+   <br>
+   <br>
+   <button type="submit" id="pr" >Bill</button>
+
+   </form>
+</body>
+<!-- <script src="billing_counter.js"></script> -->
+<script src="b2.js"></script>
+
+</html>

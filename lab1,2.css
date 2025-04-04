@@ -1,0 +1,30 @@
+*{
+    font-family: cursive;
+}
+#main{
+    display: flex;
+    align-items: flex-start;
+    
+}
+#img{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+ background-image: url("https://w7.pngwing.com/pngs/906/866/png-transparent-mcdonald-s-logo-golden-arches-mcdonald-s-sign-logo-golden-arches-mcdonald-s-sign-thumbnail.png"); 
+background-size: cover;
+}
+div{
+    display: inline-block;
+}
+button{
+    height: 20px;
+    width: 50px;
+}
+#pr{
+    height: 50px;
+    width: 100px;
+}
+#pr:hover{
+    background-color: rgb(255, 221, 0);
+    font-size: large;
+}
